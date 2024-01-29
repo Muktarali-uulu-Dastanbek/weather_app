@@ -20,19 +20,35 @@ class SearchLocationScreen extends StatelessWidget {
     final TextEditingController _controller = TextEditingController();
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Прогноз погоды",
           style: TextStyle(
             color: Colors.white,
+            fontSize: 22,
             fontWeight: FontWeight.bold,
           ),
         ),
+        // title: Text(S.of(context).hello),
         centerTitle: true,
         backgroundColor: Colors.blue,
+        // actions: [
+        //   IconButton(
+        //     onPressed: () {},
+        //     icon: Icon(Icons.abc),
+        //   ),
+        //   IconButton(
+        //     onPressed: () {},
+        //     icon: Icon(Icons.abc),
+        //   ),
+        //   IconButton(
+        //     onPressed: () {},
+        //     icon: Icon(Icons.abc),
+        //   ),
+        // ],
       ),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 10.w),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: NetworkImage(
               "https://news-ru.gismeteo.st/2019/07/ddbbcb35.jpg",
